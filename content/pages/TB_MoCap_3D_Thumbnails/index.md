@@ -3,7 +3,7 @@ title: "Génération de vignettes 3D"
 date: 2026-04-26
 draft: false
 description: "Génération de vignettes 3D à partir de fichiers BVH"
-tags: ["Sujet TB", "Animation 3D", "Motion Capture"]
+tags: ["Sujet TB", "Animation 3D", "Capture de mouvement"]
 authors : ["Benoit Le Callennec"]
 ---
 
@@ -13,16 +13,16 @@ Les fichiers **BVH (Biovision Hierarchy)** sont largement utilisés pour représ
 
 {{< figure src="featured.png" >}}
 
-L’objectif de ce travail est de concevoir un **pipeline autonome** permettant de générer automatiquement des **thumbnails animées** à partir de fichiers BVH, afin de les afficher dans une page web.
+L’objectif de ce travail est de concevoir un **pipeline autonome** permettant de générer automatiquement des **vignettes animées** à partir de fichiers BVH, afin de les afficher dans une page web.
 
 # Objectifs
 
 ## Principaux
 
 - Implémenter (ou intégrer si existant) le chargement de fichiers BVH.
-- Afficher le fichier BVH. On pourra utiliser l’application existante (avec GeeXLab) comme exemple ou s’orienter, à choix, vers une autre technologie (OpenGL, WebGPU, etc.) si souhaité.
-- Générer un image pour chaque interval de l’animation 3D.
-- Générer un gif animé à partir de la séquence d’images générées. On pourra utiliser ffmpeg pour ça.
+- Afficher le fichier BVH. On pourra utiliser l’application existante (avec GeeXLab) comme exemple ou s’orienter, au choix, vers une autre technologie (OpenGL, WebGPU, etc.).
+- Générer une image pour chaque intervalle de l’animation 3D.
+- Générer un GIF animé à partir de la séquence d’images générées. On pourra utiliser ffmpeg pour cela.
 
 ## Objectifs secondaires
 
