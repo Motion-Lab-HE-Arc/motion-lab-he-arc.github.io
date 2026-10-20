@@ -90,7 +90,7 @@
 
         <div class="article-content mb-20{{ if partial "poster/is-poster.html" . }} poster-web{{ end }}">
           {{ if partial "poster/is-poster.html" . }}{{ with .OutputFormats.Get "print" }}
-          <p class="print:hidden"><a href="{{ .RelPermalink }}">Version imprimable du poster (594 × 820 mm)</a></p>
+          <p class="print:hidden"><a href="{{ .RelPermalink }}">Version imprimable du poster (A1, 594 × 841 mm)</a></p>
           {{ end }}{{ end }}
           {{ .Content }}
           {{- if partial "poster/is-poster.html" . }}{{ with .Params.poster }}

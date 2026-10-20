@@ -1,4 +1,4 @@
-/* Posters Motion-Lab — version imprimable 594 × 820 mm (repris de 20260511_PO-RD-StImier.pptx).
+/* Posters Motion-Lab — version imprimable A1 594 × 841 mm (mise en page reprise de 20260511_PO-RD-StImier.pptx, 594 × 820 mm).
    Utilisé uniquement par layouts/_default/single.print.html (pages avec le tag « poster »). */
 :root {
   --red: #FE0000;
@@ -11,13 +11,15 @@
   --font: Aptos, "Segoe UI", Carlito, Calibri, "Liberation Sans", Arial, sans-serif;
 }
 
-@page { size: 594mm 820mm; margin: 0; }
-* { box-sizing: border-box; }
+@page { size: 594mm 841mm; margin: 0; }  /* A1 portrait */
+* { box-sizing: border-box;
+    /* imprimer les fonds (bandes rouges, pied de page) même si « Graphiques d'arrière-plan » est décoché */
+    -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 html, body { margin: 0; padding: 0; }
 
 .poster {
   position: relative;
-  width: 594mm; height: 820mm;
+  width: 594mm; height: 841mm;
   overflow: hidden;
   background: #fff; color: #000;
   font-family: var(--font);
@@ -73,7 +75,7 @@ ul > li::before { content: "-"; position: absolute; left: -1.1em; }
 
 /* ---------- Bas de page ---------- */
 .references {
-  position: absolute; left: 28mm; top: 705mm; width: 280mm;
+  position: absolute; left: 28mm; top: 726mm; width: 280mm;  /* bas de page ancré à 115 mm du bas */
   font-size: 20pt; line-height: 1.15;
 }
 .references h2 { font-size: var(--body-size); margin: 0 0 1mm; }
@@ -81,9 +83,9 @@ ul > li::before { content: "-"; position: absolute; left: -1.1em; }
 
 /* Partenaires : zone élargie vers la gauche (les références s'arrêtent à 308 mm),
    logos collés sous le filet rouge, centrés verticalement entre eux. */
-.partners-line { position: absolute; left: 326mm; top: 701mm; width: 250mm; height: 4mm; background: var(--red); }
+.partners-line { position: absolute; left: 326mm; top: 722mm; width: 250mm; height: 4mm; background: var(--red); }
 .partners {
-  position: absolute; left: 326mm; top: 711mm; width: 250mm; max-height: 72mm;
+  position: absolute; left: 326mm; top: 732mm; width: 250mm; max-height: 72mm;
   display: flex; align-items: center; justify-content: flex-end; gap: 8mm;
 }
 .partners img { height: var(--partners-height); width: auto; min-width: 0; flex: 0 1 auto;
