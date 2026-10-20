@@ -25,7 +25,7 @@ poster:
 
 ## Contexte
 
-L’arthrose du genou touche **8.5% de la population suisse**<sup>1</sup> pour un coût supérieur à 20 milliards CHF/an<sup>2</sup>.
+L’arthrose du genou touche **8,5 % de la population suisse**<sup>1</sup> pour un coût supérieur à 20 milliards CHF/an<sup>2</sup>.
 
 La pratique physiothérapeutique recommande une **approche individualisée** à chaque patient<sup>3</sup>.
 
