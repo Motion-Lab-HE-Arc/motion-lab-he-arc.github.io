@@ -3,7 +3,7 @@ title: "Individualized gait retraining using 3D motions"
 date: 2026-10-10
 draft: true
 description: "Poster IGR3D — Portes Ouvertes 2026, Neuchâtel"
-tags: ["Ra&D", "Sports & Rehabilitation", "Animation 3D", "Poster"]
+tags: ["Ra&D", "Sport & rééducation", "Animation 3D", "Poster"]
 authors: ["Antoine Lestrade", "Nicolas Wenk", "Benoit Le Callennec"]
 
 poster:
@@ -25,7 +25,7 @@ poster:
 
 ## Contexte
 
-L’arthrose du genou touche **8.5% de la population suisse**<sup>1</sup> pour un coût supérieur à 20 milliards CHF/an<sup>2</sup>).
+L’arthrose du genou touche **8.5% de la population suisse**<sup>1</sup> pour un coût supérieur à 20 milliards CHF/an<sup>2</sup>.
 
 La pratique physiothérapeutique recommande une **approche individualisée** à chaque patient<sup>3</sup>.
 
