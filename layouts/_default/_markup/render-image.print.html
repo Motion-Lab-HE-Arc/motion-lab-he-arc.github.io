@@ -1,0 +1,4 @@
+{{- /* Version imprimable : image originale, chargée immédiatement (pas de lazy loading ni de redimensionnement). */ -}}
+{{- $src := .Destination -}}
+{{- with .Page.Resources.Get .Destination -}}{{- $src = .RelPermalink -}}{{- else -}}{{- with resources.Get .Destination -}}{{- $src = .RelPermalink -}}{{- end -}}{{- end -}}
+<img src="{{ $src }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }}>

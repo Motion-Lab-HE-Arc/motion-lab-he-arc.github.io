@@ -1,0 +1,8 @@
+{{- /* Ressource : d'abord dans le dossier de la page, sinon dans assets/. Usage : partial "poster/res.html" (dict "page" . "path" "x.png") */ -}}
+{{- $r := "" -}}
+{{- with .path -}}
+  {{- with $.page.Resources.Get . -}}{{- $r = . -}}
+  {{- else -}}{{- with resources.Get . -}}{{- $r = . -}}{{- else -}}{{- errorf "[poster] fichier introuvable : %q (%s)" $.path $.page.File.Path -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $r -}}

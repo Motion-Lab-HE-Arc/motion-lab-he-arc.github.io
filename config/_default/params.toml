@@ -1,8 +1,13 @@
 colorScheme = "hearc"
+
 defaultAppearance = "light"
 autoSwitchAppearance = false
 enableSearch = true
 enableCodeCopy = true
+
+[poster]   # valeurs par défaut des posters (fichiers dans assets/)
+schoolLogo = "poster/logo-he-arc.png"
+icon = "poster/icon.png"
 
 [header]
 layout = "fixed-fill-blur"

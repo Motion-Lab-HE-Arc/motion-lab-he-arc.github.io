@@ -88,8 +88,27 @@
         
         {{ partial "series/series.html" . }}
 
-        <div class="article-content mb-20">
+        <div class="article-content mb-20{{ if partial "poster/is-poster.html" . }} poster-web{{ end }}">
+          {{ if partial "poster/is-poster.html" . }}{{ with .OutputFormats.Get "print" }}
+          <p class="print:hidden"><a href="{{ .RelPermalink }}">Version imprimable du poster (594 × 820 mm)</a></p>
+          {{ end }}{{ end }}
           {{ .Content }}
+          {{- if partial "poster/is-poster.html" . }}{{ with .Params.poster }}
+          {{- with .references }}
+          <section class="poster-references">
+            <h2>Références</h2>
+            <ol>{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ol>
+          </section>
+          {{- end }}
+          {{- with .partners }}
+          <section class="poster-partners">
+            <h2>Partenaires</h2>
+            <div class="poster-partners-logos">
+              {{- range . }}{{ with partial "poster/res.html" (dict "page" $ "path" .) }}<img src="{{ .RelPermalink }}" alt="" loading="lazy">{{ end }}{{ end }}
+            </div>
+          </section>
+          {{- end }}
+          {{- end }}{{ end }}
           {{ $defaultReplyByEmail := .Site.Params.replyByEmail }}
           {{ $replyByEmail := default $defaultReplyByEmail .Params.replyByEmail }}
           {{ if $replyByEmail }}

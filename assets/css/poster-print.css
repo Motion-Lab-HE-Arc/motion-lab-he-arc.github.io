@@ -1,0 +1,105 @@
+/* Posters Motion-Lab — version imprimable 594 × 820 mm (repris de 20260511_PO-RD-StImier.pptx).
+   Utilisé uniquement par layouts/_default/single.print.html (pages avec le tag « poster »). */
+:root {
+  --red: #FE0000;
+  --red-light: #FF4B4B;
+  --heading: #C00000;
+  --body-size: 28pt;
+  --heading-size: 40pt;
+  --content-top: 150mm;
+  --partners-height: 45mm;   /* hauteur max des logos partenaires */
+  --font: Aptos, "Segoe UI", Carlito, Calibri, "Liberation Sans", Arial, sans-serif;
+}
+
+@page { size: 594mm 820mm; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+.poster {
+  position: relative;
+  width: 594mm; height: 820mm;
+  overflow: hidden;
+  background: #fff; color: #000;
+  font-family: var(--font);
+  font-size: var(--body-size);
+  line-height: 1.15;
+  letter-spacing: -0.014em;
+}
+
+/* ---------- En-tête ---------- */
+.school-logo { position: absolute; left: 11mm; top: 3mm; height: 44mm; }
+.band        { position: absolute; left: 0; top: 48mm;  width: 488mm; height: 59mm; background: var(--red); }
+.band-light  { position: absolute; left: 0; top: 106mm; width: 488mm; height: 33mm; background: var(--red-light); }
+.icon        { position: absolute; left: 19mm; top: 50mm; width: 89mm; height: 89mm; object-fit: contain;
+               /* logo motion.lab : déjà blanc sur fond transparent, pas de filtre */ }
+/* QR à la hauteur exacte de la bande (48 → 139 mm), sans marge blanche (rognée dans poster/qr.html) */
+.qr          { position: absolute; left: 492mm; top: 48mm; width: 91mm; height: 91mm; object-fit: contain;
+               image-rendering: pixelated; }
+
+.title-block {
+  position: absolute; left: 108mm; top: 50mm; width: 380mm; height: 55mm;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center; color: #fff; font-weight: 700;
+}
+.title-block .acronym,
+.title-block .title   { font-size: var(--heading-size); text-transform: uppercase; line-height: 1.1; }
+.title-block .title   { font-style: italic; }
+.title-block .authors { font-size: var(--body-size); margin-top: 1mm; }
+
+/* ---------- Contenu ---------- */
+.content {
+  position: absolute; left: 28mm; right: 24mm; top: var(--content-top); bottom: 122mm;
+  display: flex; flex-direction: column; gap: 10mm;
+}
+/* Shortcode {{% columns %}} du site : .flex-row = rangée, .flex-1 = colonne (flex-grow = ratio) */
+.flex-row { display: flex; flex-direction: row; align-items: flex-start; gap: 30mm; }
+.flex-row > * { margin: 0 !important; }
+.flex-1 { flex: 1 1 0; min-width: 0; }
+.flex-1 > :first-child { margin-top: 0; }
+
+h2 {
+  font-size: var(--heading-size); font-weight: 700; color: var(--heading);
+  text-transform: uppercase; line-height: 1.05; margin: 9mm 0 3mm;
+}
+p { margin: 0 0 3mm; text-align: justify; }
+sup { font-size: 0.6em; line-height: 0; }
+figure { margin: 0; }
+.content img { display: block; width: 100%; height: auto; }
+
+ul { list-style: none; margin: 0 0 3mm; padding-left: 1.1em; }
+ul ul { margin: 0; }
+li { position: relative; text-align: justify; }
+ul > li::before { content: "-"; position: absolute; left: -1.1em; }
+
+/* ---------- Bas de page ---------- */
+.references {
+  position: absolute; left: 28mm; top: 705mm; width: 280mm;
+  font-size: 20pt; line-height: 1.15;
+}
+.references h2 { font-size: var(--body-size); margin: 0 0 1mm; }
+.references ol { padding-left: 1.2em; margin: 0; }
+
+/* Partenaires : zone élargie vers la gauche (les références s'arrêtent à 308 mm),
+   logos collés sous le filet rouge, centrés verticalement entre eux. */
+.partners-line { position: absolute; left: 326mm; top: 701mm; width: 250mm; height: 4mm; background: var(--red); }
+.partners {
+  position: absolute; left: 326mm; top: 711mm; width: 250mm; max-height: 72mm;
+  display: flex; align-items: center; justify-content: flex-end; gap: 8mm;
+}
+.partners img { height: var(--partners-height); width: auto; min-width: 0; flex: 0 1 auto;
+                object-fit: contain; object-position: center; }
+
+.footer {
+  position: absolute; left: 0; bottom: 0; width: 100%; height: 32mm; background: var(--red);
+  color: #fff; display: flex; align-items: center; justify-content: center; font-size: 22pt;
+}
+
+/* ---------- Aperçu à l'écran ---------- */
+@media screen {
+  body { background: #d9d9d9; padding: 20px; }
+  .stage { margin: 0 auto; }
+  .poster { transform: scale(var(--scale, 1)); transform-origin: top left; box-shadow: 0 4px 24px rgba(0,0,0,.25); }
+  .flex-1.overflowing { outline: 2mm dashed #f0f; }
+  #overflow { position: sticky; top: 0; z-index: 10; margin: 0 auto 12px; max-width: 900px; padding: 10px 14px;
+              background: #fff3cd; border: 1px solid #e0b000; font: 15px/1.4 system-ui, sans-serif; }
+}

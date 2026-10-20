@@ -14,3 +14,32 @@
 #search-results a:focus {
   background-color: rgba(223, 25, 36, 0.1) !important;
 }
+
+/* ---------- Pages « poster » (version web) : marges resserrées ---------- */
+.poster-web p,
+.poster-web ul,
+.poster-web ol { margin-top: 0; margin-bottom: 0.6em; line-height: 1.55; }
+.poster-web li { margin-top: 0.15em; margin-bottom: 0.15em; }
+.poster-web h2 { margin-top: 1.1em; margin-bottom: 0.35em; }
+.poster-web h3 { margin-top: 0.9em; margin-bottom: 0.3em; }
+/* Colonnes {{% columns %}} : espace entre texte et image, alignement en haut */
+.poster-web .flex-row { gap: 2rem; align-items: flex-start; margin-bottom: 1em; }
+.poster-web .flex-1 > :first-child { margin-top: 0; }
+.poster-web .flex-1 > :last-child { margin-bottom: 0; }
+.poster-web .flex-1 figure,
+.poster-web .flex-1 img { margin: 0; }
+.poster-web .flex-1 img { width: 100%; height: auto; }
+@media (max-width: 767px) {
+  .poster-web .flex-row { flex-direction: column; gap: 1rem; }
+}
+
+/* Références et partenaires (repris de poster.references / poster.partners) */
+.poster-web .poster-references { margin-top: 2em; font-size: 0.85em; }
+.poster-web .poster-references ol { padding-left: 1.5em; }
+.poster-web .poster-references li { margin: 0.2em 0; }
+.poster-web .poster-partners { margin-top: 2em; }
+.poster-web .poster-partners-logos {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 2.5rem;
+  padding-top: 1rem; border-top: 4px solid #FE0000;
+}
+.poster-web .poster-partners-logos img { max-height: 4.5rem; max-width: 14rem; width: auto; margin: 0; object-fit: contain; }

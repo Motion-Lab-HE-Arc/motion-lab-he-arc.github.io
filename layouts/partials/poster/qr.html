@@ -1,0 +1,13 @@
+{{- /* QR : URL -> généré par Hugo (images.QR, Hugo >= 0.141) ; sinon fichier. */ -}}
+{{- $r := "" -}}
+{{- with .Params.poster.qr -}}
+  {{- if findRE `^https?://` . -}}
+    {{- $qr := images.QR . (dict "level" "medium" "scale" 8 "targetDir" "qr") -}}
+    {{- /* Retire la marge blanche de 4 modules (4 × 8 px de chaque côté) : le code occupe toute la hauteur de la bande. */ -}}
+    {{- $s := sub $qr.Width 64 -}}
+    {{- $r = $qr.Crop (printf "%dx%d Center" $s $s) -}}
+  {{- else -}}
+    {{- $r = partial "poster/res.html" (dict "page" $ "path" .) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $r -}}

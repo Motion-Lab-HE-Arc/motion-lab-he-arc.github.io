@@ -1,0 +1,4 @@
+{{- /* Vrai si la page porte le tag « poster » (casse ignorée). */ -}}
+{{- $is := false -}}
+{{- range .Params.tags -}}{{- if eq (lower .) "poster" -}}{{- $is = true -}}{{- end -}}{{- end -}}
+{{- return $is -}}

@@ -31,6 +31,13 @@ googleAnalytics = "G-MZX6C3PLW3"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "print"]   # print.html : version imprimable des pages taguées « poster »
+
+[outputFormats.print]
+  mediaType = "text/html"
+  baseName = "print"
+  isHTML = true
+  notAlternative = true
 
 [caches]
 [caches.images]
