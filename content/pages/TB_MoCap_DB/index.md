@@ -3,21 +3,21 @@ title: "Base de données de MoCap"
 date: 2026-04-26
 draft: false
 description: "Base de données de MoCap 3D"
-tags: ["Sujet TB", "Base de données", "MoCap"]
+tags: ["Sujet TB", "Base de données", "Capture de mouvement"]
 authors : ["Benoit Le Callennec"]
 ---
 
 {{% columns ratio="3:1" class="space-x-4" %}} <!-- begin columns block -->
 
-[Le Motion-Lab @ HE-Arc](https://motion-lab-he-arc.github.io/Motion-Lab_Website/) est un espace technologique de pointe dédié à la capture et à l’analyse 3D du mouvement humain.
+[Le Motion-Lab @ HE-Arc](/pages/motion-lab/) est un espace technologique de pointe dédié à la capture et à l’analyse 3D du mouvement humain.
 
-**Le but de ce projet est de mettre en place une Base de Données pour gérer des fichiers de capture de mouvements.**
+**Le but de ce projet est de mettre en place une base de données pour gérer des fichiers de capture de mouvements.**
 
 {{< figure src="featured.png" >}}
 
 # Contexte
 
-Le Motion-Lab de la HE-Arc est un espace technologique de pointe dédié à la capture et à l’analyse 3D du mouvement humain. Il génère et stocke une grande quantité de fichiers de mouvements 3D, sous différents formats. L’objectif de ce projet est de concevoir une base de données robuste et une intégration Python permettant d’indexer, rechercher, filtrer et exploiter ces assets de manière fiable.
+Le Motion-Lab génère et stocke une grande quantité de fichiers de mouvements 3D, sous différents formats. L’objectif de ce projet est de concevoir une base de données robuste et une intégration Python permettant d’indexer, rechercher, filtrer et exploiter ces assets de manière fiable.
 
 # Objectifs
 
@@ -31,7 +31,7 @@ Le Motion-Lab de la HE-Arc est un espace technologique de pointe dédié à la c
 
 ## Secondaires (à définir)
 
-- Implémenter un système d’import de fichier de MoCap 3D. On pourra utiliser des scripts, un formulaire ou une GUI en fonction de ce qui est le plus pertinent.
+- Implémenter un système d’import de fichiers de MoCap 3D. On pourra utiliser des scripts, un formulaire ou une GUI en fonction de ce qui est le plus pertinent.
 - Détecter et gérer les doublons de fichiers.
 - Prévoir un mécanisme d’annotations et de tags pour enrichir les données.
 - Fournir des outils d’agrégation et de statistiques simples (inventaire, volumes, durées, formats).

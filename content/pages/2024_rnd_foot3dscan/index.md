@@ -3,7 +3,7 @@ title: "Foot 3D Scan (2024)"
 date: 2024-11-07
 draft: false
 description: "Scan de pied pour aider les physiothérapeutes"
-tags: ["Ra&D", "Sports & Rehabilitation", "Reconstruction 3D"]
+tags: ["Ra&D", "Sport & rééducation", "Reconstruction 3D"]
 authors : ["Ivan Serra Moncadas", "Benoit Le Callennec"]
 ---
 
@@ -37,7 +37,7 @@ La vidéo ci-dessus permet de visualiser la reconstruction progressive de l’ob
 
 Le système acquiert et traite simultanément les informations de profondeur afin de générer une reconstruction 3D détaillée. Cette démonstration met en évidence la capacité du prototype à effectuer une fusion de données fiable et dynamique, et confirme le potentiel de la technologie Kinect pour la réalisation de scans 3D interactifs.
 
-Pour l’instant, il n’a été démontré que théoriquement qu’il serait possible d’obtenir un résultat similaire sur smartphone, sans prototype fonctionnel mis en place.
+Pour l’instant, la faisabilité d’un résultat similaire sur smartphone n’a été démontrée que théoriquement ; aucun prototype fonctionnel n’a été réalisé.
 
 <---> <!-- magic separator, between columns -->
 
