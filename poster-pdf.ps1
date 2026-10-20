@@ -1,5 +1,5 @@
 # PDF des posters du site Motion-Lab (pages avec le tag « poster »).
-# Usage : .\poster-pdf.ps1   ->   pdf\<nom-du-dossier>.pdf  (594 x 820 mm)
+# Usage : .\poster-pdf.ps1   ->   pdf\<nom-du-dossier>.pdf  (A1, 594 x 841 mm)
 # Requiert hugo dans le PATH et Chrome ou Edge.
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
