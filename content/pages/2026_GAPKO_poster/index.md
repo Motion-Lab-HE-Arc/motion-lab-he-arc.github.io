@@ -10,7 +10,7 @@ poster:
   body_size: 32pt
   acronym: gapko
   qr: https://motion-lab-he-arc.github.io/pages/2023_rnd_gapko/
-  partners: [logo-chuv.png]   # TODO : ajouter le logo HES-SO (financement)
+  partners: [logo-hes-so.png, logo-chuv.png]
 ---
 
 {{% columns ratio="1:1" %}}

@@ -10,7 +10,7 @@ poster:
   body_size: 31pt
   acronym: gim3d
   qr: https://motion-lab-he-arc.github.io/pages/2025_gim3d/
-  partners: [logo-chuv.png]   # TODO : ajouter les logos HES-SO et HumanTech (HEIA-FR)
+  partners: [logo-hes-so.png, logo-chuv.png, logo-heia-fr.png]
   references:
     - "M. Capallera, A. Lestrade, D. Kohler, E. Mugellini et B. Le Callennec, *GIM3D : a pilot study of intuitive 3D motion control HMI*, 2025."
 ---
