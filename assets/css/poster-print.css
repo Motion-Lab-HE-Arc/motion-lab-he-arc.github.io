@@ -8,6 +8,13 @@
   --heading-size: 40pt;
   --content-top: 150mm;
   --partners-height: 45mm;   /* hauteur max des logos partenaires */
+  /* Espacements : mêmes multiples de la taille du texte que la version web (custom.css, .poster-web) */
+  --space-block: 0.4;   /* sous un paragraphe / une liste */
+  --space-li: 0.1;      /* entre deux puces */
+  --space-h2: 1.3;      /* au-dessus d'un titre h2 (et entre deux rangées de colonnes) */
+  --space-h2-after: 0.4;
+  --space-h4: 0.9;      /* au-dessus d'un sous-titre h4 */
+  --space-h4-after: 0.2;
   --font: Aptos, "Segoe UI", Carlito, Calibri, "Liberation Sans", Arial, sans-serif;
 }
 
@@ -51,27 +58,38 @@ html, body { margin: 0; padding: 0; }
 /* ---------- Contenu ---------- */
 .content {
   position: absolute; left: 28mm; right: 24mm; top: var(--content-top); bottom: 122mm;
-  display: flex; flex-direction: column; gap: 10mm;
+  display: flex; flex-direction: column; gap: calc(var(--space-h2) * var(--body-size));  /* = marge au-dessus d'un h2 */
 }
 /* Shortcode {{% columns %}} du site : .flex-row = rangée, .flex-1 = colonne (flex-grow = ratio) */
 .flex-row { display: flex; flex-direction: row; align-items: flex-start; gap: 30mm; }
 .flex-row > * { margin: 0 !important; }
 .flex-1 { flex: 1 1 0; min-width: 0; }
 .flex-1 > :first-child { margin-top: 0; }
+.flex-1 > :last-child { margin-bottom: 0; }
 
 h2 {
   font-size: var(--heading-size); font-weight: 700; color: var(--heading);
-  text-transform: uppercase; line-height: 1.05; margin: 9mm 0 3mm;
+  text-transform: uppercase; line-height: 1.05;
+  margin: calc(var(--space-h2) * var(--body-size)) 0 calc(var(--space-h2-after) * var(--body-size));
 }
-p { margin: 0 0 3mm; text-align: justify; }
+p { margin: 0 0 calc(var(--space-block) * var(--body-size)); text-align: left; }
+h4 { font-size: var(--body-size); font-weight: 700; line-height: 1.15;
+     margin: calc(var(--space-h4) * var(--body-size)) 0 calc(var(--space-h4-after) * var(--body-size)); }
+h4 + * { margin-top: 0; }
+h2 + h4 { margin-top: 0; }  /* directement sous un h2 : seul l'écart sous le h2 compte */
 sup { font-size: 0.6em; line-height: 0; }
 figure { margin: 0; }
 .content img { display: block; width: 100%; height: auto; }
 
-ul { list-style: none; margin: 0 0 3mm; padding-left: 1.1em; }
+ul { list-style: none; margin: 0 0 calc(var(--space-block) * var(--body-size)); padding-left: 1.1em; }
 ul ul { margin: 0; }
-li { position: relative; text-align: justify; }
-ul > li::before { content: "-"; position: absolute; left: -1.1em; }
+li { position: relative; text-align: left; }
+li + li { margin-top: calc(var(--space-li) * var(--body-size)); }
+li > p { margin: 0; }  /* listes rendues avec <p> dans les <li> : pas d'écart supplémentaire entre les puces */
+ul > li::before {  /* petit carré, centré sur la première ligne */
+  content: ""; position: absolute; left: -0.9em; top: calc(0.5lh - 0.17em);
+  width: 0.34em; height: 0.34em; background: currentColor;
+}
 
 /* ---------- Bas de page ---------- */
 .references {
@@ -86,9 +104,11 @@ ul > li::before { content: "-"; position: absolute; left: -1.1em; }
 .partners-line { position: absolute; left: 326mm; top: 722mm; width: 250mm; height: 4mm; background: var(--red); }
 .partners {
   position: absolute; left: 326mm; top: 732mm; width: 250mm; max-height: 72mm;
-  display: flex; align-items: center; justify-content: flex-end; gap: 8mm;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 6mm 8mm;
 }
-.partners img { height: var(--partners-height); width: auto; min-width: 0; flex: 0 1 auto;
+/* Logos à hauteur fixe, sans rétrécissement : s'ils ne tiennent pas sur une ligne, ils passent à la ligne
+   (réduire alors poster.partners_height pour que deux rangées tiennent dans les 72 mm). */
+.partners img { height: var(--partners-height); width: auto; min-width: 0; flex: 0 0 auto;
                 object-fit: contain; object-position: center; }
 
 .footer {
@@ -105,3 +125,14 @@ ul > li::before { content: "-"; position: absolute; left: -1.1em; }
   #overflow { position: sticky; top: 0; z-index: 10; margin: 0 auto 12px; max-width: 900px; padding: 10px 14px;
               background: #fff3cd; border: 1px solid #e0b000; font: 15px/1.4 system-ui, sans-serif; }
 }
+
+/* ---------- QR codes dans le contenu (shortcode qr) ---------- */
+.qr-row { display: flex; flex-direction: row; gap: 12mm; margin: 2mm 0 3mm; }
+.qr-inline { flex: 0 0 56mm; text-align: center; }
+.content .qr-inline img { width: 56mm; max-width: none !important; height: auto; image-rendering: pixelated; }
+.qr-inline figcaption { font-size: 20pt; line-height: 1.1; margin-top: 2mm; }
+
+/* ---------- Logos des technologies (section Technologies) ---------- */
+.tech-logos { display: flex; flex-direction: row; align-items: center; gap: 22mm; margin: 0 0 calc(var(--space-block) * var(--body-size)); }
+/* --logo-scale (dans le contenu) : égalise le poids visuel des logos de proportions différentes */
+.content .tech-logos img { width: auto; height: calc(30mm * var(--logo-scale, 1)); flex: 0 0 auto; }

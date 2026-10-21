@@ -1,0 +1,7 @@
+{{- /* QR code généré par Hugo (images.QR). Usage : {{< qr url="https://..." label="Légende" >}} */ -}}
+{{- $url := .Get "url" -}}
+{{- $qr := images.QR $url (dict "level" "medium" "scale" 8 "targetDir" "qr") -}}
+<figure class="qr-inline">
+  <a href="{{ $url }}"><img src="{{ $qr.RelPermalink }}" alt="QR {{ .Get "label" }}" style="max-width: 200px; image-rendering: pixelated;"></a>
+  {{- with .Get "label" }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
