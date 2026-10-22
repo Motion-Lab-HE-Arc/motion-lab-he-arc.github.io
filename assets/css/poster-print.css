@@ -112,7 +112,7 @@ ul > li::before {  /* petit carré, centré sur la première ligne */
 /* Hauteur de base poster.partners_height × --logo-scale (par logo), sans rétrécissement : passent à la ligne si besoin. */
 .partners img { height: calc(var(--partners-height) * var(--logo-scale, 1)); width: auto; min-width: 0; flex: 0 0 auto;
                 object-fit: contain; object-position: center; }
-/* poster.partners_mono: true → logos en niveaux de gris, pour ne pas concurrencer le rouge du poster */
+/* Logos partenaires en niveaux de gris par défaut (pas de concurrence avec le rouge du poster) ; poster.partners_mono: false pour garder la couleur */
 .partners.mono img { filter: grayscale(1); }
 
 .footer {

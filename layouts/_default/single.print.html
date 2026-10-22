@@ -65,7 +65,7 @@
     {{- with $p.partners }}
     <div class="partners-section">
       <h2>Partenaires</h2>
-      <div class="partners{{ if $p.partners_mono }} mono{{ end }}">
+      <div class="partners{{ if ne $p.partners_mono false }} mono{{ end }}">
         {{- /* Entrée : "logo.png" ou { src: logo.png, scale: 0.8 } (scale égalise le poids visuel des logos) */ -}}
         {{- range . }}{{ $src := . }}{{ $scale := 1 }}{{ if reflect.IsMap . }}{{ $src = .src }}{{ $scale = .scale | default 1 }}{{ end }}
         {{- with partial "poster/res.html" (dict "page" $ "path" $src) }}<img src="{{ .RelPermalink }}" style="--logo-scale: {{ $scale }}" alt="">{{ end }}{{ end }}

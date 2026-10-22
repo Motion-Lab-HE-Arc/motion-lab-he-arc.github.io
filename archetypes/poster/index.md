@@ -9,7 +9,7 @@ authors: []
 poster:
   acronym: ""
   qr: ""            # fichier du dossier (qr.svg) ou URL
-  partners: []      # logos placés dans ce dossier
+  partners: []      # logos placés dans ce dossier (imprimés en N&B ; partners_mono: false pour la couleur)
   references: []
 ---
 
