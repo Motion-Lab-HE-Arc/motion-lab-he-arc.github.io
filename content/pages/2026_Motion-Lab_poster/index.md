@@ -7,7 +7,7 @@ tags: ["Ra&D", "Sport & rééducation", "Animation 3D", "Poster"]
 authors: ["Ivan Serra Moncadas", "Antoine Lestrade", "Nicolas Wenk", "Benoit Le Callennec"]
 
 poster:
-  body_size: 25pt
+  body_size: 29pt
   acronym: ""
   qr: https://motion-lab-he-arc.github.io
   footer: "ING.motion-lab@he-arc.ch — motion-lab-he-arc.github.io"
