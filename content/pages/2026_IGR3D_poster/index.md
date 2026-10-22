@@ -8,7 +8,7 @@ authors: ["Antoine Lestrade", "Nicolas Wenk", "Benoit Le Callennec"]
 
 poster:
   acronym: igr3d
-  qr: https://motion-lab-he-arc.github.io/pagees/2026_igr3d_poster
+  qr: https://motion-lab-he-arc.github.io/pages/2026_igr3d_poster/
   # icon: mon-icone.png     # sinon icône par défaut (params.toml > poster.icon)
   partners: [logo-hesav.png, logo-chuv.png, logo-fns.png]
   references:
