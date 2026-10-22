@@ -23,7 +23,7 @@ Les connaissances obtenues en laboratoire peinent à être appliquées en cliniq
 
 ## Objectifs
 
-Les caméras **RGB-D** sont des capteurs « orientés patient∙es », abordables et simples à mettre en œuvre, utilisables jusqu’au domicile.
+Les caméras **RGB-D** sont des capteurs « orientés patient·es », abordables et simples à mettre en œuvre, utilisables jusqu’au domicile.
 
 Concevoir un **système multicaméras RGB-D markerless**, déployable à grande échelle, suffisamment précis pour mesurer en clinique les paramètres spatiotemporels et cinématiques de la marche.
 
@@ -43,7 +43,7 @@ Projet financé par la **HES-SO**, en étroite collaboration avec le **Swiss Bio
 
 Une solution de capture et d’analyse du mouvement **abordable, simple à utiliser et sans contact**.
 
-Une première validation a été conduite dans le cas de l’**arthrose du genou** avec le Swiss BioMotion Lab du CHUV, ouvrant la voie à un transfert vers les patient∙es et le marché.
+Une première validation a été conduite dans le cas de l’**arthrose du genou** avec le Swiss BioMotion Lab du CHUV, ouvrant la voie à un transfert vers les patient·es et le marché.
 
 <--->
 
