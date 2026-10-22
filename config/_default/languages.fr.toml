@@ -2,14 +2,14 @@ languageCode = "fr"
 languageName = "Français"
 weight = 1
 
-title = "Motion-Lab @ HE-Arc"
+title = "Motion-Lab@HE-Arc"
 
 [params]
   displayName = "FR"
   isoCode = "fr"
   rtl = false
   logo = "arc_square_logo.png"
-  description = "Motion-Lab @ HE-Arc"
+  description = "Motion-Lab@HE-Arc"
   # copyright = "Copy, _right?_ :thinking_face:"
   dateFormat = "2006"
 
