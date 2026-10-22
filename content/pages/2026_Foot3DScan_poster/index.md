@@ -24,7 +24,7 @@ Aucune solution actuelle n’est à la fois **rapide, fiable et pratique** en ro
 ## Objectifs
 
 Numériser en temps réel la forme des pieds **en moins de 5 minutes** :
-- acquisition précise des deux pieds, patient allongé sur une table ;
+- acquisition précise des deux pieds, patient∙e allongé∙e sur une table ;
 - modèle 3D complet : voûte plantaire, cheville, avant-pied et arrière-pied ;
 - à terme, modélisation à l’aide d’un **smartphone**.
 

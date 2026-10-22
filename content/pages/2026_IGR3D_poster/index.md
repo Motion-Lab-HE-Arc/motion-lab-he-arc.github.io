@@ -46,11 +46,11 @@ La capture de mouvements 3D (MoCap) permet d'optimiser des métriques biomécani
 
 ## Méthodologie
 
-Mise en place d’une **boucle collaborative temps réel** entre les patient∙e∙s et les physiothérapeutes :
-- les patient∙e∙s équipé∙e∙s de marqueurs marchent sur un tapis roulant avec capteurs de force;
+Mise en place d’une **boucle collaborative temps réel** entre les patient∙es et les physiothérapeutes :
+- les patient∙es équipé∙es de marqueurs marchent sur un tapis roulant avec capteurs de force;
 - les physiothérapeutes observent le KAM et explorent divers styles de marche via des critères sémantiques;
 - des modèles d’IA génératives spécialisés génèrenet les mouvements cibles en respectant les critères spécifiés;
-- ces mouvements cibles sont reproduits sur un avatar 3D affiché aux patient∙e∙s sur un écran.
+- ces mouvements cibles sont reproduits sur un avatar 3D affiché aux patient∙es sur un écran.
 
 Un entrainement incrémental des modèles génératifs spécialise les mouvements générés à un∙e patient∙e donné∙e, reflétant son style de marche et proposant une cible individuelle réaliste et atteignable.
 
@@ -61,9 +61,9 @@ Un entrainement incrémental des modèles génératifs spécialise les mouvement
 Ce projet allie pour la première fois l’approche personnalisée des physiothérapeutes aux métriques biomécaniques mesurées en laboratoire.
 
 3 études feront l’objet de publications :
-- 1 étude clinique (22 patient∙e∙s) analysant l’impact des stratégies de marche sur le KAM;
+- 1 étude clinique (22 patient∙es) analysant l’impact des stratégies de marche sur le KAM;
 - 1 étude (3 physiothérapeutes) évaluant si le système permet de générer des mouvements de marche de façon intuitive;
-- 1 étude (20 patient∙e∙s) validant que les patient∙e∙s comprennent les instructions et parviennent à modifier leur marche.
+- 1 étude (20 patient∙es) validant que les patient∙es comprennent les instructions et parviennent à modifier leur marche.
 
 Les publications seront en accès libre et le code source sera mis à disposition de la communauté scientifique.
 
