@@ -53,17 +53,25 @@
   {{ replaceRE ` ([:;!?])(\s|<|$)` " ${1}${2}" .Content | safeHTML }}
   </div>
 
-  {{- with $p.references }}
-  <div class="references">
-    <h2>Références</h2>
-    <ol>{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ol>
-  </div>
-  {{- end }}
-
-  {{- with $p.partners }}
-  <div class="partners-line"></div>
-  <div class="partners">
-    {{- range . }}{{ with partial "poster/res.html" (dict "page" $ "path" .) }}<img src="{{ .RelPermalink }}" alt="">{{ end }}{{ end }}
+  {{- /* Bas de page : références puis partenaires, sur toute la largeur (comme la vue web) */ -}}
+  {{- if or $p.references $p.partners }}
+  <div class="poster-bottom">
+    {{- with $p.references }}
+    <div class="references">
+      <h2>Références</h2>
+      <ol>{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ol>
+    </div>
+    {{- end }}
+    {{- with $p.partners }}
+    <div class="partners-section">
+      <h2>Partenaires</h2>
+      <div class="partners{{ if $p.partners_mono }} mono{{ end }}">
+        {{- /* Entrée : "logo.png" ou { src: logo.png, scale: 0.8 } (scale égalise le poids visuel des logos) */ -}}
+        {{- range . }}{{ $src := . }}{{ $scale := 1 }}{{ if reflect.IsMap . }}{{ $src = .src }}{{ $scale = .scale | default 1 }}{{ end }}
+        {{- with partial "poster/res.html" (dict "page" $ "path" $src) }}<img src="{{ .RelPermalink }}" style="--logo-scale: {{ $scale }}" alt="">{{ end }}{{ end }}
+      </div>
+    </div>
+    {{- end }}
   </div>
   {{- end }}
 
@@ -81,6 +89,13 @@
     poster.style.setProperty('--scale', s);
     stage.style.width = (w * s) + 'px'; stage.style.height = (h * s) + 'px';
   }
+  // Zone de contenu : s'arrête 6 mm au-dessus du bas de page (références + partenaires), quelle que soit sa hauteur
+  function layoutBottom() {
+    const b = document.querySelector('.poster-bottom'), c = document.querySelector('.content');
+    if (!b || !c) return;
+    const gap = 6 * 96 / 25.4;
+    c.style.bottom = (poster.offsetHeight - b.offsetTop + gap) + 'px';
+  }
   // Alerte si une colonne dépasse la zone de contenu (écran uniquement)
   function check() {
     const c = document.querySelector('.content');
@@ -94,7 +109,8 @@
     }
   }
   addEventListener('resize', fit);
-  addEventListener('load', () => { fit(); check(); });
+  addEventListener('load', () => { layoutBottom(); fit(); check(); });
+  layoutBottom();
   fit();
 })();
 </script>

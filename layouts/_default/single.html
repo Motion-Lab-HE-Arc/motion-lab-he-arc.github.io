@@ -104,7 +104,9 @@
           <section class="poster-partners">
             <h2>Partenaires</h2>
             <div class="poster-partners-logos">
-              {{- range . }}{{ with partial "poster/res.html" (dict "page" $ "path" .) }}<img src="{{ .RelPermalink }}" alt="" loading="lazy">{{ end }}{{ end }}
+              {{- /* Entrée : "logo.png" ou { src: logo.png, scale: 0.8 } (voir single.print.html) */ -}}
+              {{- range . }}{{ $src := . }}{{ $scale := 1 }}{{ if reflect.IsMap . }}{{ $src = .src }}{{ $scale = .scale | default 1 }}{{ end }}
+              {{- with partial "poster/res.html" (dict "page" $ "path" $src) }}<img src="{{ .RelPermalink }}" style="height: calc(3.25rem * {{ $scale }})" alt="" loading="lazy">{{ end }}{{ end }}
             </div>
           </section>
           {{- end }}
