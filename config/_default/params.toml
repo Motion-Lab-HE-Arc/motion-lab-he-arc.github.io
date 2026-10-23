@@ -8,6 +8,7 @@ enableCodeCopy = true
 [poster]   # valeurs par défaut des posters (fichiers dans assets/)
 schoolLogo = "poster/logo-he-arc.png"
 icon = "poster/icon.png"
+footer = "ING.motion-lab@he-arc.ch — motion-lab-he-arc.github.io"
 
 [header]
 layout = "fixed-fill-blur"

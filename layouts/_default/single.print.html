@@ -75,7 +75,7 @@
   </div>
   {{- end }}
 
-  <div class="footer">{{ with $p.footer }}{{ . }}{{ end }}</div>
+  <div class="footer">{{ with $p.footer | default site.Params.poster.footer }}{{ . }}{{ end }}</div>
 </div>
 </div>
 

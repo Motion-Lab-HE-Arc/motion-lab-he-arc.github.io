@@ -10,7 +10,6 @@ poster:
   body_size: 29pt
   acronym: ""
   qr: https://motion-lab-he-arc.github.io
-  footer: "ING.motion-lab@he-arc.ch — motion-lab-he-arc.github.io"
   partners_height: 24mm
   partners_mono: true
   partners:
