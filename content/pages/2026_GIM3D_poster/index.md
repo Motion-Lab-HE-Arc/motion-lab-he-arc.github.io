@@ -8,7 +8,7 @@ authors: ["M. Capallera", "A. Lestrade", "D. Kohler", "E. Mugellini", "B. Le Cal
 
 poster:
   body_size: 28pt
-  acronym: gim3d
+  acronym: gim3d, 2025
   qr: https://motion-lab-he-arc.github.io/pages/2025_gim3d/
   partners: [logo-hes-so.png, logo-chuv.png, logo-heia-fr.png]
   references:
