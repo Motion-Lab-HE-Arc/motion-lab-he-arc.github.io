@@ -1,5 +1,5 @@
 ---
-title: "Analyser la marche pour la pratique clinique courante"
+title: "Capture de la marche sans marqueurs"
 date: 2026-10-20
 draft: true
 description: "Poster GAPKO"
@@ -7,51 +7,76 @@ tags: ["Ra&D", "Sport & rééducation", "Markerless", "Poster"]
 authors: ["Christophe Müller", "Benoit Le Callennec"]
 
 poster:
-  body_size: 32pt
-  acronym: gapko
-  qr: https://motion-lab-he-arc.github.io/pages/2023_rnd_gapko/
+  body_size: 28pt
+  acronym: gapko, 2022
+  qr: https://motion-lab-he-arc.github.io/pages/2020_rnd_gapko/
   partners: [logo-hes-so.png, logo-chuv.png]
+  references:
+    - "C. Muller, J. Favre et B. Le Callennec, *Robust Contactless Shoes Tracking for Gait Analysis*, manuscrit non publié, 2022."
+    - "T. Guzsvinecz *et al.*, *Sensors*, vol. 19, n° 5, 1072, 2019."
+    - "D. J. Geerse *et al.*, *PLoS ONE*, vol. 10, n° 10, e0139913, 2015."
+    - "A. Botros *et al.*, *Sensors*, vol. 21, 6205, 2021."
+    - "B. Le Callennec, *GAPKO*, rapport scientifique final HES-SO, 2021."
 ---
 
 {{% columns ratio="1:1" %}}
 
 ## Contexte
 
-La capacité de marcher est essentielle à la **qualité de vie**. De nombreuses atteintes musculo-squelettiques et neurologiques l’affectent et nécessitent une prise en charge lourde et onéreuse.
+La capacité de marcher est essentielle à la **qualité de vie**. De nombreuses atteintes musculo-squelettiques et neurologiques l’affectent, comme l’**arthrose du genou**.
 
-Les connaissances obtenues en laboratoire peinent à être appliquées en clinique : les systèmes d’analyse de la marche y sont **onéreux, complexes et parfois invasifs**.
+Les systèmes des laboratoires (capture optique avec marqueurs, tapis instrumentés, centrales inertielles) sont **chers et difficiles à utiliser** ; leur mise en place peut prendre 30 minutes, plus qu’une séance de physiothérapie (environ 25 minutes)<sup>1</sup>.
 
-## Objectifs
-
-Les caméras **RGB-D** sont des capteurs « orientés patient·es », abordables et simples à mettre en œuvre, utilisables jusqu’au domicile.
-
-Concevoir un **système multicaméras RGB-D markerless**, déployable à grande échelle, suffisamment précis pour mesurer en clinique les paramètres spatiotemporels et cinématiques de la marche.
+Les caméras **RGB-D** sont abordables et sans contact, mais le squelette calculé par la Kinect est trop imprécis pour la clinique<sup>2</sup>. Les systèmes existants sont imprécis (4 Kinect v2<sup>3</sup>) ou chers (4 LiDAR à 2 000 CHF chacun<sup>4</sup>), et ne mesurent pas l’orientation des pieds.
 
 <--->
 
 ![GAPKO](featured.png)
 
-## Partenaires
-
-Projet financé par la **HES-SO**, en étroite collaboration avec le **Swiss BioMotion Lab du CHUV**, un des leaders mondiaux de l’analyse et du réentraînement de la marche.
+*Suivi des deux chaussures avec 3 Kinect.*
 
 {{% /columns %}}
 
 {{% columns ratio="1:1" %}}
 
-## Résultats
+## Objectifs
 
-Une solution de capture et d’analyse du mouvement **abordable, simple à utiliser et sans contact**.
+- Système **multicaméras RGB-D markerless**, abordable, rapide à installer ;
+- mesurer la **position et l’orientation des pieds** au cours du temps, d’où découlent longueur et durée du pas, vitesse, cadence, angles du pied ;
+- comparer au **VICON** du Swiss BioMotion Lab (CHUV) ;
+- application : réentraînement de la marche en cas d’arthrose du genou.
 
-Une première validation a été conduite dans le cas de l’**arthrose du genou** avec le Swiss BioMotion Lab du CHUV, ouvrant la voie à un transfert vers les patient·es et le marché.
+## Méthodologie
+
+- **3 Kinect Azure** synchronisées, à 60 cm du sol, sur un seul portable ; profondeur 640 × 576 px à 30 images/s<sup>1</sup>.
+- **Scan 3D des chaussures**, une fois par patient·e.
+- **Calibration** : grille ArUco au sol, affinée avec la profondeur et le plan du sol.
+- **Suivi** à chaque image : segmentation, suppression des points aberrants, recalage du modèle de chaussure par **ICP robuste (LMedS)**, sur la profondeur seule.
+
+## Technologies
+
+<div class="tech-logos">
+  <img src="logo-python.svg" style="--logo-scale: 1.4" alt="Python">
+  <img src="logo-kinect.svg" style="--logo-scale: 0.6" alt="Kinect">
+  <img src="logo-geexlab.svg" style="--logo-scale: 1.1" alt="GeeXLab">
+</div>
 
 <--->
 
-## Perspectives
+## Résultats
 
-- Troubles musculo-squelettiques ;
-- entraînement sportif ;
-- jeux vidéo ;
-- VR/AR pour la conception et la maintenance industrielle.
+- Démonstrateur<sup>5</sup> : nuages de points en 3D temps réel (plus de 100 000 points chacun), interface graphique complète, enregistrement et relecture des mesures.
+- 3 sessions de mesure au CHUV, comparées au VICON, **sans sujets** (commission d’éthique obligatoire) : chaussures déplacées avec des perches.
+- Résultats encourageants, mais insuffisants pour une publication.
+
+## Limites et perspectives
+
+- Valider sur des sujets (commission d’éthique) et comparer à l’état de l’art.
+- Chaussures à scanner au préalable, les mêmes à chaque mesure.
+- Autres applications : troubles musculo-squelettiques, sport, jeux vidéo, VR/AR industrielle.
+
+## Partenaires
+
+Financé par la **HES-SO** (CHF 110 000, 2020-2022), avec le **Swiss BioMotion Lab (CHUV)**.
 
 {{% /columns %}}
