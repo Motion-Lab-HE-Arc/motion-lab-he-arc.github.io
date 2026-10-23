@@ -57,8 +57,8 @@ KinectFusion est retenu : seule technique rapide et incrémentale.
 
 <div class="tech-logos">
   <img src="logo-python.svg" style="--logo-scale: 1.4" alt="Python">
-  <img src="logo-kinect.svg" style="--logo-scale: 0.6" alt="Kinect">
   <img src="logo-geexlab.svg" style="--logo-scale: 1.1" alt="GeeXLab">
+  <img src="logo-kinect.svg" style="--logo-scale: 0.6" alt="Kinect">
 </div>
 
 <--->

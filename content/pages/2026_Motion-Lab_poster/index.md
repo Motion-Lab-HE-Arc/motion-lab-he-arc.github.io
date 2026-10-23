@@ -67,10 +67,10 @@ Analyse de la marche avec des caméras RGB-D (Kinect) pour la pratique clinique.
 ## Technologies utilisées
 
 <div class="tech-logos">
-  <img src="logo-optitrack.png" style="--logo-scale: 0.95" alt="OptiTrack">
   <img src="logo-python.svg" style="--logo-scale: 1.15" alt="Python">
   <img src="logo-unity.svg" style="--logo-scale: 0.62" alt="Unity">
   <img src="logo-unreal-engine.svg" style="--logo-scale: 1" alt="Unreal Engine">
+  <img src="logo-optitrack.png" style="--logo-scale: 0.95" alt="OptiTrack">
 </div>
 
 <--->

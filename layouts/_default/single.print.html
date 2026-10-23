@@ -34,7 +34,7 @@
   {{- with partial "poster/res.html" (dict "page" . "path" ($p.schoolLogo | default site.Params.poster.schoolLogo)) }}
   <img class="school-logo" src="{{ .RelPermalink }}" alt="">
   {{- end }}
-  <div class="band"></div><div class="band-light"></div>
+  <div class="band"></div>
   {{- with partial "poster/res.html" (dict "page" . "path" ($p.icon | default site.Params.poster.icon)) }}
   <img class="icon" src="{{ .RelPermalink }}" alt="">
   {{- end }}
