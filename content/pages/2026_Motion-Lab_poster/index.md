@@ -1,5 +1,5 @@
 ---
-title: "Motion-Lab@HE-Arc, Portes Ouvertes 2026"
+title: "Motion-Lab@HE-Arc, 2026"
 date: 2026-10-21
 draft: true
 description: "Motion-Lab@HE-Arc"
@@ -40,7 +40,7 @@ Nous mesurons, analysons et générons du mouvement humain en 3D pour la santé 
 
 <--->
 
-![Motion-Lab](Motion-Lab_systeme_motive.jpg)
+![Projets de recherche du Motion-Lab : IGR3D, GIM3D, Foot 3D Scan, GAPKO](Motion-Lab_projets.jpg)
 
 {{% /columns %}}
 
