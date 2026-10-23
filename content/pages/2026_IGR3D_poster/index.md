@@ -10,13 +10,14 @@ poster:
   acronym: igr3d, 2026-2030
   qr: https://motion-lab-he-arc.github.io/pages/2026_igr3d_poster/
   # icon: mon-icone.png     # sinon icône par défaut (params.toml > poster.icon)
+  partners_height: 30mm
   partners: [logo-hesav.png, logo-chuv.png, logo-fns.png]
   references:
     - "T. Vetsch, J. Taeymans et N. Lutz, « Optimising the current model of care for knee osteoarthritis with the implementation of guideline recommended non-surgical treatments: a model-based health economic evaluation », *Swiss Medical Weekly*, vol. 153, 40059, 2023. doi:10.57187/smw.2023.40059"
     - "S. M. Engel et V. Krafft, Annals of the Rheumatic Diseases, 2018."
     - "S. T. Skou et E. M. Roos, « Physical therapy for patients with knee and hip osteoarthritis: supervised, active treatment is current best practice », *Clinical and Experimental Rheumatology*, vol. 37, n° 5, suppl. 120, p. 112-117, 2019."
     - "K. R. Vincent, B. P. Conrad, B. J. Fregly et H. K. Vincent, « The pathophysiology of osteoarthritis: a mechanical perspective on the knee joint », *PM&R*, vol. 4, n° 5 suppl., p. S3-S9, 2012. doi:10.1016/j.pmrj.2012.01.020"
-  # body_size: 28pt
+  body_size: 28pt
   # heading_size: 40pt
   # content_top: 150mm
 ---
@@ -34,15 +35,7 @@ La capture de mouvements 3D (MoCap) permet d'optimiser des métriques biomécani
 ## Motivations
 1. Permettre aux physiothérapeutes de visualiser l’impact des styles de marche sur le KAM.
 2. Utiliser un **avatar 3D** comme **moyen de communication**, plutôt que des courbes et des graphiques.
-3. Proposer des **contrôles sémantiques, intuitifs** (écartement des pieds, balancement du tronc, etc.) permettant aux thérapeutes de proposer un traitement individualisé.
-
-<--->
-
-![Motion-Lab](featured.jpg)
-
-{{% /columns %}}
-
-{{% columns ratio="1:1" %}}
+3. Proposer des **contrôles intuitifs** (écartement des pieds, balancement du tronc, etc.) permettant aux thérapeutes de proposer un traitement individualisé.
 
 ## Méthodologie
 
@@ -54,7 +47,17 @@ Mise en place d’une **boucle collaborative temps réel** entre les patient·es
 
 Un entrainement incrémental des modèles génératifs spécialise les mouvements générés à un·e patient·e donné·e, reflétant son style de marche et proposant une cible individuelle réaliste et atteignable.
 
+## Technologies
+
+<div class="tech-logos">
+  <img src="logo-python.svg" style="--logo-scale: 1.15" alt="Python">
+  <img src="logo-unreal-engine.svg" style="--logo-scale: 1" alt="Unreal Engine">
+  <img src="logo-optitrack.png" style="--logo-scale: 0.95" alt="OptiTrack">
+</div>
+
 <--->
+
+![Motion-Lab](featured.jpg)
 
 ## Impact & résultats attendus
 
@@ -66,5 +69,11 @@ Ce projet allie pour la première fois l’approche personnalisée des physioth�
 - 1 étude (20 patient·es) validant que les patient·es comprennent les instructions et parviennent à modifier leur marche.
 
 Les publications seront en accès libre et le code source sera mis à disposition de la communauté scientifique.
+
+IGR3D s’appuie sur **GIM3D** (2024-2025, HES-SO) et sur **Motion Machine** (Master HES-SO d’Antoine Lestrade).
+
+## Partenaires
+
+Projet financé par le **FNS** (2026-2030) et mené avec la **HESAV** et le **CHUV**.
 
 {{% /columns %}}
