@@ -7,7 +7,7 @@ tags: ["Ra&D", "Sport & rééducation", "Animation 3D", "Poster"]
 authors: ["Ivan Serra Moncadas", "Antoine Lestrade", "Nicolas Wenk", "Benoit Le Callennec"]
 
 poster:
-  body_size: 29pt
+  body_size: 28pt
   acronym: ""
   qr: https://motion-lab-he-arc.github.io
   partners_height: 24mm
@@ -30,7 +30,9 @@ poster:
 
 Nous mesurons, analysons et générons du mouvement humain en 3D pour la santé et le sport.
 
-**Domaines :** rééducation, sport, ergonomie, animation 3D, réalité virtuelle, création artistique.
+**Domaines**
+
+Rééducation, sport, ergonomie, animation 3D, réalité virtuelle, création artistique.
 
 ## Équipement
 - **16 caméras OptiTrack** pour une mesure temps réel et précise du mouvement humain en 3D
@@ -40,7 +42,7 @@ Nous mesurons, analysons et générons du mouvement humain en 3D pour la santé 
 
 <--->
 
-![Projets de recherche du Motion-Lab : IGR3D, GIM3D, Foot 3D Scan, GAPKO](Motion-Lab_projets.jpg)
+![Projets de recherche du Motion-Lab : IGR3D, GIM3D, Foot 3D Scan, GAPKO](Motion-Lab_projets.png)
 
 {{% /columns %}}
 
