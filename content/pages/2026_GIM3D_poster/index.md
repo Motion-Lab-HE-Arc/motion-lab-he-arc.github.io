@@ -4,7 +4,14 @@ date: 2026-10-20
 draft: false
 description: "Poster GIM3D"
 tags: ["Ra&D", "Sport & rééducation", "Animation 3D", "Poster"]
-authors: ["M. Capallera", "A. Lestrade", "D. Kohler", "E. Mugellini", "B. Le Callennec"]
+authors:
+  [
+    "M. Capallera",
+    "A. Lestrade",
+    "D. Kohler",
+    "E. Mugellini",
+    "B. Le Callennec",
+  ]
 
 poster:
   body_size: 28pt
@@ -30,25 +37,28 @@ Enfin, bien que les modèles d’IA génératifs produisent des mouvements réal
 
 ![GIM3D](featured.png)
 
-*Application GIM3D : une course idéale et deux courses générées (ACP et CVAE).*
+_Application GIM3D : une course idéale et deux courses générées (ACP et CVAE)._
 
 {{% /columns %}}
 
 {{% columns ratio="1:1" %}}
 
 ## Objectifs
+
 GIM3D développe les bases techniques de la génération intuitive de mouvements 3D, pour :
-- offrir aux entraîneur·euses un outil pour modifier un mouvement 3D en direct, simplement et rapidement.
+
+- Offrir aux entraîneur·euses un outil pour modifier un mouvement 3D en direct, simplement et rapidement.
 - Afficher les mouvements 3D générés avec des indicateurs visuels facilement compréhensibles.
 - S'appuyer sur des **modèles statistiques avancés** pour garantir des mouvements 3D plausibles.
 
 ## Méthodologie
 
-- **Approche centrée utilisateur** : observation d’un entraîneur de course conseillant un athlète sur tapis roulant, au Swiss BioMotion Lab (CHUV) ; 6 paramètres cités, 3 modélisés : écartement des coudes, hauteur des genoux, tronc.
+- **Approche centrée utilisateur** : observation d’un entraîneur de course conseillant un·e athlète sur tapis roulant, au Swiss BioMotion Lab (CHUV) ; 6 paramètres cités, 3 modélisés : écartement des coudes, hauteur des genoux, tronc.
 - **Modèles statistiques avancés**, en Python, entraînés sur des courses pré-enregistrées : analyse en composantes principales (**ACP**) et auto-encodeurs variationnels conditionnels (**CVAE**).
 - **Application tactile Unity** (Android et Windows) : des curseurs modifient la course des mannequins ACP et CVAE, affichée à côté d’une course idéale.
 
 ## Technologies
+
 <div class="tech-logos">
   <img src="logo-python.svg" style="--logo-scale: 1.8" alt="Python">
   <img src="logo-unity.svg" style="--logo-scale: 1" alt="Unity">
@@ -59,7 +69,8 @@ GIM3D développe les bases techniques de la génération intuitive de mouvements
 ## Résultats
 
 Étude pilote avec 5 participant·es<sup>1</sup> (1 entraîneur, 2 athlètes, 2 non-athlètes ; 20 minutes au plus) :
-- utilisabilité : **F-SUS = 85,5 / 100**.
+
+- Utilisabilité : **F-SUS = 85,5 / 100**.
 - UEQ-S (échelle de −3 à 3) : moyenne globale de **2**, qualité pragmatique (2,35) supérieure à la qualité hédonique (1,65).
 - Outil jugé utile, clair et efficace.
 - Comparaison avec la course « idéale » appréciée par l’ensemble des participant·es.
@@ -79,4 +90,3 @@ GIM3D sert de base technique au projet IGR3D (2026-2030, FNS), qui vise à assis
 Projet financé par la **HES-SO** et développé avec l’**Institut HumanTech (HEIA-FR)** et le **Swiss BioMotion Lab (CHUV)**.
 
 {{% /columns %}}
-
