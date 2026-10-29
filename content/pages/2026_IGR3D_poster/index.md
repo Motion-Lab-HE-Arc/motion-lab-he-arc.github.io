@@ -33,6 +33,7 @@ La pratique physiothérapeutique recommande une **approche individualisée** à 
 La capture de mouvements 3D (MoCap) permet d’optimiser des métriques biomécaniques comme le moment d’adduction du genou (**KAM**), directement lié à la progression de la maladie<sup>4</sup>.
 
 ## Motivations
+
 1. Permettre aux physiothérapeutes de visualiser l’impact des styles de marche sur le KAM.
 2. Utiliser un **avatar 3D** comme **moyen de communication**, plutôt que des courbes et des graphiques.
 3. Proposer des **contrôles intuitifs** (écartement des pieds, balancement du tronc, etc.) permettant aux thérapeutes de proposer un traitement individualisé.
@@ -40,7 +41,8 @@ La capture de mouvements 3D (MoCap) permet d’optimiser des métriques bioméca
 ## Méthodologie
 
 Mise en place d’une **boucle collaborative temps réel** entre les patient·es et les physiothérapeutes :
-- les patient·es équipé·es de marqueurs marchent sur un tapis roulant avec capteurs de force.
+
+- Les patient·es équipé·es de marqueurs marchent sur un tapis roulant avec capteurs de force.
 - Les physiothérapeutes observent le KAM et explorent divers styles de marche via des critères sémantiques.
 - Des modèles d’IA génératifs spécialisés génèrent les mouvements cibles en respectant les critères spécifiés.
 - Ces mouvements cibles sont reproduits sur un avatar 3D affiché aux patient·es sur un écran.
@@ -64,6 +66,7 @@ Un entraînement incrémental des modèles génératifs spécialise les mouvemen
 Ce projet allie pour la première fois l’approche personnalisée des physiothérapeutes aux métriques biomécaniques mesurées en laboratoire.
 
 3 études feront l’objet de publications :
+
 - 1 étude clinique (22 patient·es) analysant l’impact des stratégies de marche sur le KAM ;
 - 1 étude (3 physiothérapeutes) évaluant si le système permet de générer des mouvements de marche de façon intuitive ;
 - 1 étude (20 patient·es) validant que les patient·es comprennent les instructions et parviennent à modifier leur marche.
