@@ -1,21 +1,21 @@
 ---
 title: "Capture de la marche sans marqueurs"
 date: 2026-10-20
-draft: true
+draft: false
 description: "Poster GAPKO"
 tags: ["Ra&D", "Sport & rééducation", "Markerless", "Poster"]
 authors: ["Christophe Müller", "Benoit Le Callennec"]
 
 poster:
   body_size: 28pt
-  acronym: gapko, 2022
+  acronym: GAPKO, 2022
   qr: https://motion-lab-he-arc.github.io/pages/2020_rnd_gapko/
   partners: [logo-hes-so.png, logo-chuv.png]
   references:
-    - "C. Muller, J. Favre et B. Le Callennec, *Robust Contactless Shoes Tracking for Gait Analysis*, manuscrit non publié, 2022."
-    - "T. Guzsvinecz *et al.*, *Sensors*, vol. 19, n° 5, 1072, 2019."
-    - "D. J. Geerse *et al.*, *PLoS ONE*, vol. 10, n° 10, e0139913, 2015."
-    - "A. Botros *et al.*, *Sensors*, vol. 21, 6205, 2021."
+    - "C. Müller, J. Favre et B. Le Callennec, *Robust Contactless Shoes Tracking for Gait Analysis*, manuscrit non publié, 2022."
+    - "T. Guzsvinecz, V. Szucs et C. Sik-Lanyi, « Suitability of the Kinect Sensor and Leap Motion Controller—A Literature Review », *Sensors*, vol. 19, n° 5, 1072, 2019."
+    - "D. J. Geerse, B. H. Coolen et M. Roerdink, « Kinematic Validation of a Multi-Kinect v2 Instrumented 10-Meter Walkway for Quantitative Gait Assessments », *PLoS ONE*, vol. 10, n° 10, e0139913, 2015."
+    - "A. Botros *et al.*, « Contactless Gait Assessment in Home-like Environments », *Sensors*, vol. 21, n° 18, 6205, 2021."
     - "B. Le Callennec, *GAPKO*, rapport scientifique final HES-SO, 2021."
 ---
 
@@ -48,7 +48,7 @@ Les caméras **RGB-D** sont abordables et sans contact, mais le squelette calcul
 
 ## Méthodologie
 
-- **3 Kinect Azure** synchronisées, à 60 cm du sol, sur un seul portable ; profondeur 640 × 576 px à 30 images/s<sup>1</sup>.
+- **3 Azure Kinect** synchronisées, à 60 cm du sol, sur un seul portable ; profondeur 640 × 576 px à 30 images/s<sup>1</sup>.
 - **Scan 3D des chaussures**, une fois par patient·e.
 - **Calibration** : grille ArUco au sol, affinée avec la profondeur et le plan du sol.
 - **Suivi** à chaque image : segmentation, suppression des points aberrants, recalage du modèle de chaussure par **ICP robuste (LMedS)**, sur la profondeur seule.
@@ -77,6 +77,6 @@ Les caméras **RGB-D** sont abordables et sans contact, mais le squelette calcul
 
 ## Partenaires
 
-Financé par la **HES-SO** (CHF 110 000, 2020-2022), avec le **Swiss BioMotion Lab (CHUV)**.
+Financé par la **HES-SO** (110 000 CHF, 2020-2022), avec le **Swiss BioMotion Lab (CHUV)**.
 
 {{% /columns %}}
