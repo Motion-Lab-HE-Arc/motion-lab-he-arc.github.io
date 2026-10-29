@@ -53,7 +53,11 @@ Rééducation, sport, ergonomie, animation 3D, réalité virtuelle et création 
 
 <--->
 
-![Projets de recherche du Motion-Lab : IGR3D, GIM3D, Foot 3D Scan, GAPKO](Motion-Lab_projets.png)
+<div class="img-scale" style="--img-scale: 0.85">
+
+![Personne équipée de marqueurs marchant sur un tapis de course au Motion-Lab, rayons des caméras OptiTrack vers un marqueur](Motion-Lab_projets.png "Les caméras OptiTrack localisent chaque marqueur en 3D.")
+
+</div>
 
 {{% /columns %}}
 

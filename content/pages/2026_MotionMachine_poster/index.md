@@ -41,7 +41,7 @@ Le cloud permet de **déporter ce calcul sur un serveur** et de diffuser l’ani
 - Un **serveur de streaming d’animations** piloté par une **API REST**, avec plusieurs animations diffusées en même temps.
 - Des **algorithmes d’animation** (« animateurs ») prêts à l’emploi, chacun livré comme package Python.
 - Un **plugin Unity** pour se connecter au serveur, piloter l’animation et l’appliquer aux personnages.
-- Intégrer Motion Machine à d’autres projets de recherche, comme **GIM3D** et ses algorithmes ACP et CVAE.
+- Intégrer Motion Machine à d’autres projets de recherche, comme **GIM3D** et ses algorithmes PCA et CVAE.
 
 ## Méthodologie
 
@@ -62,8 +62,8 @@ Le cloud permet de **déporter ce calcul sur un serveur** et de diffuser l’ani
 ## Résultats
 
 - Système **multiplateforme** de streaming d’animations 3D en temps réel<sup>2</sup>.
-- **3 animateurs** intégrés : lecture d’animation (FK), Motion Matching, animateur ACP de GIM3D.
-- Animations ACP de **GIM3D** calculées sur le serveur et diffusées dans Unity.
+- **3 animateurs** intégrés : lecture d’animation (FK), Motion Matching, animateur PCA de GIM3D.
+- Animations PCA de **GIM3D** calculées sur le serveur et diffusées dans Unity.
 - Recherche de la meilleure pose (Motion Matching), pour 13 184 poses : **845 ms** en objets Python, **93,7 ms** avec Numpy, **3,4 ms** avec Numba, **1,16 ms** avec Numba en parallèle.
 
 ## Limites et perspectives

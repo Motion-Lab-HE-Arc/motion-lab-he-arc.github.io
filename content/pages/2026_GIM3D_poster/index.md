@@ -37,7 +37,7 @@ Enfin, bien que les modèles d’IA génératifs produisent des mouvements réal
 
 ![GIM3D](featured.png)
 
-_Application GIM3D : une course idéale et deux courses générées (ACP et CVAE)._
+_Application GIM3D : une course idéale et deux courses générées (PCA et CVAE)._
 
 {{% /columns %}}
 
@@ -54,8 +54,8 @@ GIM3D développe les bases techniques de la génération intuitive de mouvements
 ## Méthodologie
 
 - **Approche centrée utilisateur** : observation d’un entraîneur de course conseillant un·e athlète sur tapis roulant, au Swiss BioMotion Lab (CHUV) ; 6 paramètres cités, 3 modélisés : écartement des coudes, hauteur des genoux, tronc.
-- **Modèles statistiques avancés**, en Python, entraînés sur des courses pré-enregistrées : analyse en composantes principales (**ACP**) et auto-encodeurs variationnels conditionnels (**CVAE**).
-- **Application tactile Unity** (Android et Windows) : des curseurs modifient la course des mannequins ACP et CVAE, affichée à côté d’une course idéale.
+- **Modèles statistiques avancés**, en Python, entraînés sur des courses pré-enregistrées : analyse en composantes principales (**PCA**) et auto-encodeurs variationnels conditionnels (**CVAE**).
+- **Application tactile Unity** (Android et Windows) : des curseurs modifient la course des mannequins PCA et CVAE, affichée à côté d’une course idéale.
 
 ## Technologies
 

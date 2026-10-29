@@ -71,18 +71,20 @@ h2 {
   text-transform: uppercase; line-height: 1.05;
   margin: calc(var(--space-h2) * var(--body-size)) 0 calc(var(--space-h2-after) * var(--body-size));
 }
-p { margin: 0 0 calc(var(--space-block) * var(--body-size)); text-align: left; }
+p { margin: 0 0 calc(var(--space-block) * var(--body-size)); text-align: justify; hyphens: auto; }
 h4 { font-size: var(--body-size); font-weight: 700; line-height: 1.15;
      margin: calc(var(--space-h4) * var(--body-size)) 0 calc(var(--space-h4-after) * var(--body-size)); }
 h4 + * { margin-top: 0; }
 h2 + h4 { margin-top: 0; }  /* directement sous un h2 : seul l'écart sous le h2 compte */
 sup { font-size: 0.6em; line-height: 0; }
 figure { margin: 0; }
+.content figure:not(.qr-inline) > figcaption { font-size: 20pt; line-height: 1.15; font-style: italic; text-align: center; margin-top: 2mm; }
 .content img { display: block; width: 100%; height: auto; }
+.img-scale { width: calc(var(--img-scale, 1) * 100%); margin: 0 auto; }  /* réduire une image : <div class="img-scale" style="--img-scale: 0.85"> */
 
 ul { list-style: none; margin: 0 0 calc(var(--space-block) * var(--body-size)); padding-left: 1.1em; }
 ul ul { margin: 0; }
-li { position: relative; text-align: left; }
+li { position: relative; text-align: justify; hyphens: auto; }
 li + li { margin-top: calc(var(--space-li) * var(--body-size)); }
 li > p { margin: 0; }  /* listes rendues avec <p> dans les <li> : pas d'écart supplémentaire entre les puces */
 ul > li::before {  /* petit carré, centré sur la première ligne */

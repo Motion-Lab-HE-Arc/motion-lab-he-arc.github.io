@@ -59,7 +59,7 @@ Un entraînement incrémental des modèles génératifs spécialise les mouvemen
 
 <--->
 
-![Motion-Lab](featured.jpg)
+![Personne équipée de marqueurs sur tapis de course, interface à curseurs et avatar 3D à l’écran](featured.jpg "Réglage de la marche par curseurs (premier plan) et avatar 3D (à droite).")
 
 ## Impact & résultats attendus
 

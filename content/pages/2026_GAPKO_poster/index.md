@@ -16,7 +16,6 @@ poster:
     - "T. Guzsvinecz, V. Szucs et C. Sik-Lanyi, « Suitability of the Kinect Sensor and Leap Motion Controller—A Literature Review », *Sensors*, vol. 19, n° 5, 1072, 2019."
     - "D. J. Geerse, B. H. Coolen et M. Roerdink, « Kinematic Validation of a Multi-Kinect v2 Instrumented 10-Meter Walkway for Quantitative Gait Assessments », *PLoS ONE*, vol. 10, n° 10, e0139913, 2015."
     - "A. Botros *et al.*, « Contactless Gait Assessment in Home-like Environments », *Sensors*, vol. 21, n° 18, 6205, 2021."
-    - "B. Le Callennec, *GAPKO*, rapport scientifique final HES-SO, 2021."
 ---
 
 {{% columns ratio="1:1" %}}
@@ -65,7 +64,7 @@ _Suivi des deux chaussures avec 3 Kinect._
 
 ## Résultats
 
-- Démonstrateur<sup>5</sup> : nuages de points en 3D temps réel (plus de 100 000 points chacun), interface graphique complète, enregistrement et relecture des mesures.
+- Démonstrateur : nuages de points en 3D temps réel (plus de 100 000 points chacun), interface graphique complète, enregistrement et relecture des mesures.
 - 3 sessions de mesure au CHUV, comparées au VICON, **sans sujets** (commission d’éthique obligatoire) : chaussures déplacées avec des perches.
 - Résultats encourageants, mais insuffisants pour une publication.
 
