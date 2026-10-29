@@ -9,7 +9,7 @@ authors: ["Ivan Serra Moncadas", "Benoit Le Callennec"]
 poster:
   body_size: 29pt
   acronym: FOOT 3D SCAN, 2024
-  qr: https://motion-lab-he-arc.github.io/pages/2024_rnd_foot3dscan/
+  qr: https://motion-lab-he-arc.github.io/pages/2026_foot3dscan_poster/
   partners_mono: true
   partners: [{ src: Innosuisse_Logo_supported_Innovation_cheque_rgb_EN.png, scale: 1.6 }]
   references:

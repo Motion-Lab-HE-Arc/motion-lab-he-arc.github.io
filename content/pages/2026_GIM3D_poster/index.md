@@ -9,7 +9,7 @@ authors: ["M. Capallera", "A. Lestrade", "D. Kohler", "E. Mugellini", "B. Le Cal
 poster:
   body_size: 28pt
   acronym: GIM3D, 2025
-  qr: https://motion-lab-he-arc.github.io/pages/2025_gim3d/
+  qr: https://motion-lab-he-arc.github.io/pages/2026_gim3d_poster/
   partners: [logo-hes-so.png, logo-chuv.png, logo-heia-fr.png]
   references:
     - "M. Capallera, A. Lestrade, D. Kohler, E. Mugellini et B. Le Callennec, « GIM3D: a Pilot Study of Intuitive 3D Motion Control HMI », *IHM ’25*, Toulouse, 2025."

@@ -9,7 +9,7 @@ authors: ["Ivan Serra Moncadas", "Antoine Lestrade", "Nicolas Wenk", "Benoit Le 
 poster:
   body_size: 28pt
   acronym: ""
-  qr: https://motion-lab-he-arc.github.io
+  qr: https://motion-lab-he-arc.github.io/pages/2026_motion-lab_poster/
   partners_height: 24mm
   partners_mono: true
   partners:

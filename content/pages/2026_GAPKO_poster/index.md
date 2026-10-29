@@ -9,7 +9,7 @@ authors: ["Christophe Müller", "Benoit Le Callennec"]
 poster:
   body_size: 28pt
   acronym: GAPKO, 2022
-  qr: https://motion-lab-he-arc.github.io/pages/2020_rnd_gapko/
+  qr: https://motion-lab-he-arc.github.io/pages/2026_gapko_poster/
   partners: [logo-hes-so.png, logo-chuv.png]
   references:
     - "C. Müller, J. Favre et B. Le Callennec, *Robust Contactless Shoes Tracking for Gait Analysis*, manuscrit non publié, 2022."
