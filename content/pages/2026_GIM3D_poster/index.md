@@ -38,9 +38,9 @@ Enfin, bien que les modèles d’IA génératifs produisent des mouvements réal
 
 ## Objectifs
 GIM3D développe les bases techniques de la génération intuitive de mouvements 3D, pour :
-- offrir aux entraîneur·euses un outil pour modifier un mouvement 3D en direct, simplement et rapidement ;
-- afficher les mouvements 3D générés avec des indicateurs visuels facilement compréhensibles ;
-- s’appuyer sur des **modèles statistiques avancés** pour garantir des mouvements 3D plausibles.
+- offrir aux entraîneur·euses un outil pour modifier un mouvement 3D en direct, simplement et rapidement.
+- Afficher les mouvements 3D générés avec des indicateurs visuels facilement compréhensibles.
+- S'appuyer sur des **modèles statistiques avancés** pour garantir des mouvements 3D plausibles.
 
 ## Méthodologie
 
@@ -59,10 +59,10 @@ GIM3D développe les bases techniques de la génération intuitive de mouvements
 ## Résultats
 
 Étude pilote avec 5 participant·es<sup>1</sup> (1 entraîneur, 2 athlètes, 2 non-athlètes ; 20 minutes au plus) :
-- utilisabilité : **F-SUS = 85,5 / 100** ;
-- UEQ-S (échelle de −3 à 3) : moyenne globale de **2**, qualité pragmatique (2,35) supérieure à la qualité hédonique (1,65) ;
-- outil jugé utile, clair et efficace ;
-- comparaison avec la course « idéale » appréciée par l’ensemble des participant·es.
+- utilisabilité : **F-SUS = 85,5 / 100**.
+- UEQ-S (échelle de −3 à 3) : moyenne globale de **2**, qualité pragmatique (2,35) supérieure à la qualité hédonique (1,65).
+- Outil jugé utile, clair et efficace.
+- Comparaison avec la course « idéale » appréciée par l’ensemble des participant·es.
 
 Les premiers résultats démontrent l’efficacité de l’outil, pour les praticien·nes comme pour les chercheur·euses.
 

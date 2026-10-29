@@ -40,10 +40,10 @@ La capture de mouvements 3D (MoCap) permet d’optimiser des métriques bioméca
 ## Méthodologie
 
 Mise en place d’une **boucle collaborative temps réel** entre les patient·es et les physiothérapeutes :
-- les patient·es équipé·es de marqueurs marchent sur un tapis roulant avec capteurs de force ;
-- les physiothérapeutes observent le KAM et explorent divers styles de marche via des critères sémantiques ;
-- des modèles d’IA génératifs spécialisés génèrent les mouvements cibles en respectant les critères spécifiés;
-- ces mouvements cibles sont reproduits sur un avatar 3D affiché aux patient·es sur un écran.
+- les patient·es équipé·es de marqueurs marchent sur un tapis roulant avec capteurs de force.
+- Les physiothérapeutes observent le KAM et explorent divers styles de marche via des critères sémantiques.
+- Des modèles d’IA génératifs spécialisés génèrent les mouvements cibles en respectant les critères spécifiés.
+- Ces mouvements cibles sont reproduits sur un avatar 3D affiché aux patient·es sur un écran.
 
 Un entraînement incrémental des modèles génératifs spécialise les mouvements générés à un·e patient·e donné·e, reflétant son style de marche et proposant une cible individuelle réaliste et atteignable.
 

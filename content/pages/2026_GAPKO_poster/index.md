@@ -41,10 +41,10 @@ Les caméras **RGB-D** sont abordables et sans contact, mais le squelette calcul
 
 ## Objectifs
 
-- Système **multicaméras RGB-D markerless**, abordable, rapide à installer ;
-- mesurer la **position et l’orientation des pieds** au cours du temps, d’où découlent longueur et durée du pas, vitesse, cadence, angles du pied ;
-- comparer au **VICON** du Swiss BioMotion Lab (CHUV) ;
-- application : réentraînement de la marche en cas d’arthrose du genou.
+- Système **multicaméras RGB-D markerless**, abordable, rapide à installer.
+- Mesurer la **position et l’orientation des pieds** au cours du temps, d’où découlent longueur et durée du pas, vitesse, cadence, angles du pied.
+- Comparer au **VICON** du Swiss BioMotion Lab (CHUV).
+- Application : réentraînement de la marche en cas d’arthrose du genou.
 
 ## Méthodologie
 
