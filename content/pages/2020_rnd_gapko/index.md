@@ -1,6 +1,6 @@
 ---
-title: "GAPKO (2020)"
-date: 2020-06-01
+title: "GAPKO (2022)"
+date: 2022-03-01
 aliases: ["/pages/2023_rnd_gapko/"]
 draft: false
 description: "Analyser la marche pour la pratique clinique courante"
