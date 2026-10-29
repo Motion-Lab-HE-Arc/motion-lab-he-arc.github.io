@@ -1,14 +1,14 @@
 ---
-title: "Streaming d'animations 3D en temps réel"
+title: "Streaming d’animations 3D en temps réel"
 date: 2026-10-23
-draft: true
+draft: false
 description: "Poster Motion Machine"
 tags: ["Ra&D", "Animation 3D", "Cloud", "Poster"]
 authors: ["Antoine Lestrade", "Benoit Le Callennec"]
 
 poster:
   body_size: 28pt
-  acronym: Motion Machine, 2024
+  acronym: MOTION MACHINE, 2024
   qr: https://motion-lab-he-arc.github.io/pages/2026_motionmachine_poster/
   partners: [logo-hes-so.png]
   references:
@@ -38,15 +38,15 @@ Le cloud permet de **déporter ce calcul sur un serveur** et de diffuser l’ani
 
 ## Objectifs
 
-- Un **serveur de streaming d’animations** piloté par une **API REST**, avec plusieurs animations diffusées en même temps ;
-- des **algorithmes d’animation** (« animateurs ») prêts à l’emploi, chacun livré comme package Python ;
-- un **plugin Unity** pour se connecter au serveur, piloter l’animation et l’appliquer aux personnages ;
-- intégrer Motion Machine à d’autres projets de recherche, comme **GIM3D** et ses algorithmes ACP et VAE.
+- Un **serveur de streaming d’animations** piloté par une **API REST**, avec plusieurs animations diffusées en même temps.
+- Des **algorithmes d’animation** (« animateurs ») prêts à l’emploi, chacun livré comme package Python.
+- Un **plugin Unity** pour se connecter au serveur, piloter l’animation et l’appliquer aux personnages.
+- Intégrer Motion Machine à d’autres projets de recherche, comme **GIM3D** et ses algorithmes ACP et CVAE.
 
 ## Méthodologie
 
 - **Serveur Python** basé sur **FastAPI** ; animations diffusées par **WebSocket**.
-- **Lecture d’animation** en cinématique directe (FK), basée sur la librairie **Skanym** du projet GIM3D.
+- **Lecture d’animation** en cinématique directe (FK), basée sur la bibliothèque **Skanym** du projet GIM3D.
 - **Motion Matching** en Python, d’après Clavet<sup>1</sup>, pour des transitions fluides et réalistes entre animations.
 - **Plugin client Unity** : contrôle du serveur et des paramètres des animateurs.
 
@@ -70,7 +70,6 @@ Le cloud permet de **déporter ce calcul sur un serveur** et de diffuser l’ani
 
 - Compatible aujourd’hui avec **Unity** seulement.
 - Extension prévue à d’autres outils et moteurs : **Blender**, **Unreal Engine**, **Godot**.
-- Optimisations à l’étude, comme la **parallélisation**, pour la montée en charge et les performances du Motion Matching.
 
 ## Partenaires
 
