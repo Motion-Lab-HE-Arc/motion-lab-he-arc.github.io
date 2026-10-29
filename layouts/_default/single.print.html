@@ -39,7 +39,13 @@
   <img class="icon" src="{{ .RelPermalink }}" alt="">
   {{- end }}
   {{- with partial "poster/qr.html" . }}
+  {{- /* Si le QR encode une URL, il devient aussi un lien cliquable dans le PDF. */ -}}
+  {{- $url := $p.qr }}
+  {{- if findRE `^https?://` $url }}
+  <a class="qr" href="{{ $url }}"><img src="{{ .RelPermalink }}" alt="QR"></a>
+  {{- else }}
   <img class="qr" src="{{ .RelPermalink }}" alt="QR">
+  {{- end }}
   {{- end }}
 
   <div class="title-block">
