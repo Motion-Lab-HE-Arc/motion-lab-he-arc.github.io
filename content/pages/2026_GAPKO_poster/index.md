@@ -42,7 +42,7 @@ _Suivi des deux chaussures avec 3 Kinect._
 ## Objectifs
 
 - Système **multicaméras RGB-D markerless**, abordable, rapide à installer.
-- Mesurer la **position et l’orientation des pieds** au cours du temps, d’où découlent longueur et durée du pas, vitesse, cadence, et angles du pied.
+- Mesurer la **position et l’orientation des pieds** au cours du temps, d’où découlent longueur et durée du pas, vitesse, cadence et angles du pied.
 - Comparer au **VICON** du Swiss BioMotion Lab (CHUV).
 - Application : réentraînement de la marche en cas d’arthrose du genou.
 
@@ -51,7 +51,7 @@ _Suivi des deux chaussures avec 3 Kinect._
 - **3 Azure Kinect** synchronisées, à 60 cm du sol, sur un seul ordinateur portable ; profondeur 640 × 576 px à 30 images/s<sup>1</sup>.
 - **Scan 3D des chaussures**, une fois par patient·e.
 - **Calibration** : grille ArUco au sol, affinée avec la profondeur et le plan du sol.
-- **Suivi** à chaque image : segmentation, suppression des points aberrants, et recalage du modèle de chaussure par **ICP robuste (LMedS)**, sur la profondeur seule.
+- **Suivi** à chaque image : segmentation, suppression des points aberrants et recalage du modèle de chaussure par **ICP robuste (LMedS)**, sur la profondeur seule.
 
 ## Technologies
 
@@ -73,7 +73,7 @@ _Suivi des deux chaussures avec 3 Kinect._
 
 - Valider sur des sujets (commission d’éthique) et comparer à l’état de l’art.
 - Chaussures à scanner au préalable, les mêmes à chaque mesure.
-- Autres applications : troubles musculo-squelettiques, sport, jeux vidéo, et VR/AR industrielle.
+- Autres applications : troubles musculo-squelettiques, sport, jeux vidéo et VR/AR industrielle.
 
 ## Partenaires
 
