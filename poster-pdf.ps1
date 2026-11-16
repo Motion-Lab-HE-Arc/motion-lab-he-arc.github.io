@@ -29,7 +29,7 @@ Get-ChildItem $site -Recurse -Filter print.html | ForEach-Object {
   $name = $m.Matches[0].Groups[1].Value
   $out  = Join-Path $PWD "pdf\$name.pdf"
   $uri  = ([System.Uri]$_.FullName).AbsoluteUri
-  $chromeArgs = @("--headless", "--disable-gpu", "--no-pdf-header-footer",
+  $chromeArgs = @("--headless", "--disable-gpu", "--no-pdf-header-footer", "--disable-extensions", "--log-level=3",
                   "--run-all-compositor-stages-before-draw", "--virtual-time-budget=5000",
                   "--user-data-dir=`"$tmpProfile`"", "--print-to-pdf=`"$out`"", "`"$uri`"")
   Start-Process -FilePath $chrome -ArgumentList $chromeArgs -Wait -NoNewWindow
